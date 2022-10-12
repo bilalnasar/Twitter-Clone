@@ -11,7 +11,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered :width="283">
       <q-icon
       class="q-pa-md"
        name="fa-solid fa-dove"
@@ -46,8 +46,56 @@
     </q-list>
     </q-drawer>
 
+
+
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <!-- drawer content -->
+      <q-input
+      placeholder="Search Twitter"
+      class="q-ma-md"
+      outlined
+      rounded
+      dense
+      >
+        <template v-slot:prepend>
+          <q-icon name="search" />
+        </template>
+      </q-input>
+
+      <q-list separator padding>
+      <q-item>
+        <q-item-section>
+          <q-item-label overline class="text-grey">Education</q-item-label>
+          <q-item-label class="text-weight-bold">Something Terrific</q-item-label>
+          <q-item-label caption>Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.</q-item-label>
+        </q-item-section>
+
+        <q-item-section side top>
+          <q-item-label caption>5 min ago</q-item-label>
+        </q-item-section>
+      </q-item>
+      <q-item>
+        <q-item-section>
+          <q-item-label overline class="text-grey">Education</q-item-label>
+          <q-item-label class="text-weight-bold">Something Terrific</q-item-label>
+          <q-item-label caption>Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.</q-item-label>
+        </q-item-section>
+
+        <q-item-section side top>
+          <q-item-label caption>5 min ago</q-item-label>
+        </q-item-section>
+      </q-item>
+      <q-item>
+        <q-item-section>
+          <q-item-label overline class="text-grey">Education</q-item-label>
+          <q-item-label class="text-weight-bold">Something Terrific</q-item-label>
+          <q-item-label caption>Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.</q-item-label>
+        </q-item-section>
+
+        <q-item-section side top>
+          <q-item-label caption>5 min ago</q-item-label>
+        </q-item-section>
+      </q-item>
+      </q-list>
     </q-drawer>
 
     <q-page-container>
